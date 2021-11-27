@@ -48,12 +48,20 @@ function server(){
     xhttp.send();
     
 }
+// var tasks= document.querySelectorAll(".tasks");
+// for(var f=0;f<tasks.length;f++){
+//     tasks[f].onclick = function(){
+//         this.classList.toggle('completed');
+//     }
+// }
 // function  crossout(id) {
 //     var box = document.getElementById(id);
 //     box.style = "text-decoration: line-through";
 //   }
 
 function checkboxes(){
+    
+
     var b = document.forms["main"];
     var y = b.querySelectorAll('input[type="checkbox"]:checked');
     var out = (y.length-count);
@@ -61,7 +69,8 @@ function checkboxes(){
     if ((out%5 == 0)&& (out>1)){
         alert(`Congrats!!! ${out} Tasks have been Successfully Completed.`);
     }
-                                                }
+}
+
                             
     
 
