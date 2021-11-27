@@ -1,0 +1,66 @@
+body{
+    background-image: url('./main1.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    
+  }
+  
+
+th {
+  /* background-color: #04AA6D; */
+  color: white;
+  font-size: large;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+td{
+  color: lightsteelblue;
+  font-weight: bolder;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  
+}
+table tr th{
+  
+    white-space:nowrap;
+
+}
+.fit {
+width: 50%;
+margin-left: 30%;
+}
+table{
+    margin-top: 5%;
+    
+    
+   
+}
+
+
+tr {
+  /* github.com/w3c/csswg-drafts/issues/1899 */
+  transform: scale(1);
+  position: relative;
+}
+:invalid .if-valid{
+  display: none;
+}
+/* Moz hack to enable :before on radio
+input[type=radio]{appearance: none;}
+input[type=radio]::before{content: '⚪';}
+input[type=radio]:checked::before{content: '🔘';padding: 3px 5px;}
+*/
+:checked::before {
+  /* add a background (webkit only)*/
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: lightgray;
+  opacity: .2;
+  z-index: -1;
+  
+ 
+} 
