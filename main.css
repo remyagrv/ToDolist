@@ -44,28 +44,22 @@ tr {
 :invalid .if-valid{
   display: none;
 }
-/* Moz hack to enable :before on radio
-input[type=radio]{appearance: none;}
-input[type=radio]::before{content: '⚪';}
-input[type=radio]:checked::before{content: '🔘';padding: 3px 5px;}
-*/
+
 :checked::before {
-  /* add a background (webkit only)*/
-  content: ' ';
+  
+  content: '';
   position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: lightgray;
-  opacity: .2;
-  z-index: -1;
+  border-color:red;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+  
+  
   
  
 } 
-tr td.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
-}
+

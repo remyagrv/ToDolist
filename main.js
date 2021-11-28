@@ -16,7 +16,7 @@ function server(){
                         if ((data[i].completed)==true ){
                         var row =   `<tr>
                                             <td>${data[i].id}</td>
-                                            <td>${data[i].title.strike()}</td>
+                                            <td>${data[i].title}</td>
                                             <td>${data[i].innerHTML = '<input type="checkbox" disabled name="checkbox" checked />'}</td> 
                                     </tr>`
                                     
@@ -24,8 +24,8 @@ function server(){
                         }else{
                             var row =   `<tr>
                                                 <td>${data[i].id}</td>
-                                                <td>${data[i].title}</td>
-                                                <td>${data[i].innerHTML = '<input name="checkbox" onchange="checkboxes();" type="checkbox"/>'}</td> 
+                                                <td><label class="strikethrough">${data[i].title}</label></td>
+                                                <td >${data[i].innerHTML = '<input name="checkbox" type="checkbox" class ="chk" onchange="checkboxes();" />'}</td> 
                                         </tr>`
                                         table.innerHTML += row;
                                         
@@ -36,6 +36,7 @@ function server(){
                     }
                     let a = document.forms["main"];
     let x = a.querySelectorAll('input[type="checkbox"]:checked');
+    
     count = x.length;
     console.log(count);
   
@@ -59,6 +60,7 @@ function checkboxes(){
 
     var b = document.forms["main"];
     var y = b.querySelectorAll('input[type="checkbox"]:checked');
+    
     var out = (y.length-count);
     console.log(out);
     if ((out%5 == 0)&& (out>1)){
