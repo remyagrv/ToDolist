@@ -49,6 +49,16 @@
    </div>
    </form>
   </div>
+  <script>
+    
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('tr');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'td') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+    </script>
  
 </body>
 </html>

@@ -48,12 +48,7 @@ function server(){
     xhttp.send();
     
 }
-// var tasks= document.querySelectorAll(".tasks");
-// for(var f=0;f<tasks.length;f++){
-//     tasks[f].onclick = function(){
-//         this.classList.toggle('completed');
-//     }
-// }
+//
 // function  crossout(id) {
 //     var box = document.getElementById(id);
 //     box.style = "text-decoration: line-through";
