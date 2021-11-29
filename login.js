@@ -29,12 +29,9 @@ function validate( callback)
  
 }
 }
-
 function redirect(x)
-{
-   
+{ 
   if (x==1){
-    alert("hai");
     window.open("./main.html");}
   
 }
